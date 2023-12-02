@@ -1008,12 +1008,12 @@ def findCalibrations(input):
   sumOfCalibration = 0
   listOfValues = input.split()
   for line in listOfValues:
-    print(line)
+    # print(line)
     first = findFirstNum(line)
     last = findLastnum(line)
     numToAdd = int(str(first)+str(last))
-    print(numToAdd)
-    print('\n')
+    # print(numToAdd)
+    # print('\n')
     sumOfCalibration +=  numToAdd
   return sumOfCalibration
   
