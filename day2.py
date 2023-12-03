@@ -6,14 +6,13 @@ fileObj.close()
 
 def day2(gameInput):
   total = 0
-
   # masterDict = {
   #   "g": 13,
   #   "r": 12,
   #   "b": 14
   # }
-
   splInput = gameInput.splitlines()
+
   for game in splInput:
     flag = False
     game = game.split("Game ")
@@ -24,11 +23,13 @@ def day2(gameInput):
     # get each mini game
     miniGames = gameNum[1].split("; ")
     # print(miniGames)
+
     # get each individual number:color combo per minigame
     for set in miniGames:
       set = set.strip()
       set = set.split(", ")
       # print(set)
+
       for roll in set:
         roll = roll.split(" ")
         # print(roll[1][0], roll[0])
@@ -69,6 +70,7 @@ def day2part2(gameInput):
       set = set.strip()
       set = set.split(", ")
       # print(set)
+
       for roll in set:
         roll = roll.split(" ")
         # print(roll[1][0], roll[0])
